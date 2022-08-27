@@ -117,7 +117,9 @@ p {
 .img-fluid {
   border-radius: 24px;
 }
-
+.icons .col-1 {
+  padding: 0;
+}
 .icon {
   color: #6c63ff;
   background: #f9f7fd;
@@ -127,6 +129,11 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+.icon:hover {
+  border: 1px solid var(--branding-color);
 }
 .email {
   text-decoration: none;
@@ -171,5 +178,11 @@ p {
   }
   .footer .btn-branding {
     margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons {
+    justify-content: space-evenly !important;
   }
 }
